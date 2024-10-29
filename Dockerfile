@@ -1,6 +1,10 @@
-FROM python:3
+FROM python:3.12
 
 WORKDIR /data
+
+RUN pip install --upgrade pip
+
+RUN pip install --upgrade setuptools
 
 RUN pip install django==3.2
 
